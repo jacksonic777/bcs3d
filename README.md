@@ -4,6 +4,10 @@ BCS3D
 
 BCS3Dは、WebGLを使用したブラウザ上で動作する3D Webアプリケーションです。
 
+## スクリーンショット
+
+![BCS3Dの画面](IMG_1309.png)
+
 デモ
 
 https://yoshino-tech.com/bcs3d/
@@ -22,5 +26,4 @@ https://yoshino-tech.com/bcs3d/
 今後の予定
 
 * READMEの充実
-* スクリーンショットの追加
 * ソースコードの公開
