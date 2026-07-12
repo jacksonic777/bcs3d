@@ -1,0 +1,188 @@
+      "ドア": {
+        "members": [
+          "Porti��re_avant_gauche_Cr_Exterieur_0",
+          "Porte_avant_droite_Cr_Exterieur_0"
+        ],
+        "showInUI": true,
+        "display": "ドア"
+      },
+
+
+
+
+
+
+
+
+
+
+        , "Porte_avant_droite_Vitre_0"
+        , "Porte_avant_droite_Cr_Interieur_0"
+        , "Porte_avant_droite_Retro_0"
+        , "Portiere_avant_gauche_Cr_Exterieur_0"
+        , "Portiere_avant_gauche_Vitre_0"
+        , "Portiere_avant_gauche_Cr_Interieur_0"
+        , "Portiere_avant_gauche_Retro_0"
+
+
+    "nameMap": {
+      "Cr_Exterieur_Cr_Exterieur_0": { "display": "ボディ前面", "showInUI": true },
+      "Porte_avant_droite_Cr_Exterieur_0": { "display": "右側ドア", "showInUI": true },
+      "Portiere_avant_gauche_Cr_Exterieur_0": { "display": "左側ドア", "showInUI": true },
+      "Phare_Phare_0": { "display": "ヘッドライト", "showInUI": false },
+
+      "Jante_Jante_1_0": { "display": "左フロントホイール", "showInUI": true },
+      "Jante_3_Jante_0": { "display": "左フロントホイール", "showInUI": true },
+      "Jante_Jante_2_0": { "display": "リアホイール", "showInUI": true },
+      "Par_boue_Par_boue_0": { "display": "後輪カバー", "showInUI": true },
+      "Chassis_Chassis_0": { "display": "車体", "showInUI": true },
+
+      "Chassis_2_Chassis_2_0": { "display": "燃料タンク", "showInUI": false },
+      "Autres_Barre_0": { "display": "ナンバープレート", "showInUI": false },
+
+      "Portiere_avant_gauche_Cr_Interieur_0": { "display": "不明", "showInUI": false },
+      "Siege_Siege_0": { "display": "シート", "showInUI": false },
+      "Vitre_Vitre_0": { "display": "フロントガラススモーク", "showInUI": false },
+      "Porte_avant_droite_Vitre_0": { "display": "右側ドアガラススモーク", "showInUI": false },
+      "Porte_avant_droite_Cr_Interieur_0": { "display": "右側ドアの内側", "showInUI": false },
+      "Barre_Barre_0": { "display": "バー", "showInUI": false },
+
+
+
+      "Cordon_Cordon_0": { "display": "謎", "showInUI": false },
+      "Cr_Interieur_Cr_Interieur_0": { "display": "内部", "showInUI": false },
+      "Essieu_Chassis_2_0": { "display": "車軸", "showInUI": false },
+      "Essui_glace_2_Barre_0": { "display": "雨刷", "showInUI": false },
+      "Interieur_3_Interieur_3_0": { "display": "内部", "showInUI": false },
+      "Interieur_2_Interieur_2_0": { "display": "内部", "showInUI": false },
+      "Essuis_glace_1_Barre_0": { "display": "雨刷", "showInUI": false },
+      "Interieur_Interieur_4_0": { "display": "内部", "showInUI": false },
+      "Jante_2_Jante_0": { "display": "不明", "showInUI": false },
+      "Portiere_avant_gauche_Retro_0": { "display": "不明", "showInUI": false },
+      "Portiere_avant_gauche_Vitre_0": { "display": "不明", "showInUI": false },
+      "Pneu_1_Pneu_0": { "display": "不明", "showInUI": false },
+      "Pneu_2_Pneu_0": { "display": "不明", "showInUI": false },
+      "Pneu_3_Pneu_0": { "display": "不明", "showInUI": false },
+      "Pneu_Pneu_0": { "display": "不明", "showInUI": false },
+      "Porte_avant_droite_Retro_0": { "display": "不明", "showInUI": false },
+      "Retro_Retro_0": { "display": "不明", "showInUI": false }
+    },
+
+    -----------------------------------------------------------------------
+
+
+    "nameMap": {
+      "Cr_Exterieur_Cr_Exterieur_0": { "display": "前面ボディ", "showInUI": true },
+      "Porte_avant_droite_Cr_Exterieur_0": { "display": "右側ドア", "showInUI": true },
+      "Portiere_avant_gauche_Cr_Exterieur_0": { "display": "左側ドア", "showInUI": true },
+      "Phare_Phare_0": { "display": "ヘッドライト", "showInUI": true },
+      "Chassis_2_Chassis_2_0": { "display": "燃料タンク", "showInUI": true },
+      "Autres_Barre_0": { "display": "ナンバープレート", "showInUI": false },
+      "Jante_Jante_1_0": { "display": "右前ホイール", "showInUI": true },
+      "Jante_3_Jante_0": { "display": "左前ホイール", "showInUI": true },
+      "Jante_Jante_2_0": { "display": "右後輪ホイール", "showInUI": true },
+      "Par_boue_Par_boue_0": { "display": "後輪カバー", "showInUI": true },
+      "Siege_Siege_0": { "display": "シート", "showInUI": false },
+      "Vitre_Vitre_0": { "display": "フロントガラススモーク", "showInUI": false },
+      "Porte_avant_droite_Vitre_0": { "display": "右側ドアガラススモーク", "showInUI": false },
+      "Porte_avant_droite_Cr_Interieur_0": { "display": "右側ドアの内側", "showInUI": false },
+      "Barre_Barre_0": { "display": "バー", "showInUI": false },
+      "Chassis_Chassis_0": { "display": "車体", "showInUI": false },
+      "Cordon_Cordon_0": { "display": "謎", "showInUI": false },
+      "Cr_Interieur_Cr_Interieur_0": { "display": "内部", "showInUI": false },
+      "Essieu_Chassis_2_0": { "display": "車軸", "showInUI": false },
+      "Essui_glace_2_Barre_0": { "display": "雨刷", "showInUI": false },
+      "Interieur_3_Interieur_3_0": { "display": "内部", "showInUI": false },
+      "Interieur_2_Interieur_2_0": { "display": "内部", "showInUI": false },
+      "Essuis_glace_1_Barre_0": { "display": "雨刷", "showInUI": false },
+      "Interieur_Interieur_4_0": { "display": "内部", "showInUI": false },
+      "Portiere_avant_gauche_Cr_Interieur_0": { "display": "不明", "showInUI": false },
+      "Jante_2_Jante_0": { "display": "不明", "showInUI": false },
+      "Portiere_avant_gauche_Retro_0": { "display": "不明", "showInUI": false },
+      "Portiere_avant_gauche_Vitre_0": { "display": "不明", "showInUI": false },
+      "Pneu_1_Pneu_0": { "display": "不明", "showInUI": false },
+      "Pneu_2_Pneu_0": { "display": "不明", "showInUI": false },
+      "Pneu_3_Pneu_0": { "display": "不明", "showInUI": false },
+      "Pneu_Pneu_0": { "display": "不明", "showInUI": false },
+      "Porte_avant_droite_Retro_0": { "display": "不明", "showInUI": false },
+      "Retro_Retro_0": { "display": "不明", "showInUI": false }
+    },
+
+
+"ヘッドライト": ["Phare_Phare_0"],
+
+      "燃料タンク": ["Chassis_2_Chassis_2_0"],
+
+  ,
+  {
+    "file": "truck_wip.glb",
+    "label": "[簡易]大型トラック(白ベース)",
+    "showUnaliased": false,
+    "groups": {
+      "全体": ["Box002_Material_#45_0"]
+    },
+    "nameMap": {
+      "Box002_Material_#45_0": { "display": "全体", "showInUI": true },
+      "Object001__0": { "display": "謎", "showInUI": false }
+    },
+    "hiddenNodes": [],
+    "hiddenGroups": []
+  }
+
+  ,
+  {
+    "file": "mahindra_-_thar_roxx.glb",
+    "label": "04:",
+    "showUnaliased": true,
+    "groups": {
+      "ボディ下部": ["Material2_2"]
+      ,"ホイール中心部": ["Material2_11"]
+      ,"ホイールスポーク": ["Material2_13"]
+    },
+    "nameMap": {
+      "Material2_2": { "display": "ボディ下部とタイヤ", "showInUI": true }
+      , "Material2_11": { "display": "ホイール中心部", "showInUI": true }
+      , "Material2_13": { "display": "ホイールスポーク", "showInUI": true }
+    },
+    "hiddenNodes": [],
+    "hiddenGroups": []
+  }
+
+
+
+  --------------------------------------------
+
+  ,
+  {
+    "file": "carrier_truck_renault_premium_dxi_440.glb"
+    ,"label": "05:トラック(青ベース)(簡易モデル)"
+    ,"nameMap": {
+
+         "Body_Carrosserie_0": { "display":"ボディ(トラクター部分", "showInUI": true}
+         ,"Box_Bache_0": { "display":"コンテナ部", "showInUI": true}
+         , "Light_Phare_0": { "display":"ヘッドライト", "showInUI": true}
+         , "Front_left_door_Carrosserie_0": { "display":"左ドア", "showInUI": true}
+         , "Front_left_door_Autre_0": { "display":"左ドアミラー", "showInUI": true}
+
+
+        , "Accessory_Accessoire_0": { "display":"不明", "showInUI": false}
+        , "Interior_Interieur_0": { "display":"内部", "showInUI": false}
+        , "Body_Interior_Carrosserie_inte_0": { "display":"内部", "showInUI": false}
+        , "Seat_Si��ge_0": { "display":"シート", "showInUI": false}
+        , "Chassis_2_Chassis_2_0": { "display":"燃料タンク", "showInUI": false}
+        , "Chassis_Chassis_0": { "display":"不明", "showInUI": false}
+        , "Dashboard_Tableau_de_bord_0": { "display":"ダッシュボード", "showInUI": false}
+        , "Front_left_door_Accessoire_0": { "display":"左前ドア", "showInUI": false}
+        , "Front_left_door_Carrosserie_2_0": { "display":"不明", "showInUI": false}
+        , "Front_left_door_Vitre_0": { "display":"左ドアガラス？", "showInUI": false}
+
+    }
+      ,
+  {
+    "file": "box-truck.glb"
+    ,"label": "04:ボックス型トラック(白ベース)(簡易モデル)"
+    ,"nameMap": {
+      "Truck_TruckMt_0": { "display":"ボディ全体", "showInUI": true}
+      , "Truck_glassmt_0": { "display":"ガラス", "showInUI": false}
+    }
+  }

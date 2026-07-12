@@ -1,0 +1,110 @@
+[
+  {
+    "file": "jeep_grand_cherokee_trackhawk.glb",
+    "label": "普通車ジープ型_1",
+    "showUnaliased": false,
+    "groups": {
+      "ボディ": {
+        "members": [
+          "Object_2"
+        ],
+        "showInUI": true,
+        "display": "ボディ"
+      }
+    }
+  },
+  {
+    "file": "lct_3000_07-_low_poly_model.glb",
+    "label": "トラック型_1",
+    "showUnaliased": false,
+    "groups": {
+      "ボディ": {
+        "members": [
+          "LCT300007_Body_LCT13_07_Bodymat_0"
+        ],
+        "showInUI": true,
+        "display": "ボディ"
+      }
+    }
+  },
+  {
+    "file": "truck_daf_cf_75.310.glb",
+    "label": "トラック型_2",
+    "showUnaliased": false,
+    "groups": {
+      "ボディ": {
+        "members": [
+          "Cr_Exterieur_Cr_Exterieur_0",
+          "Porti��re_avant_gauche_Cr_Exterieur_0",
+          "Porte_avant_droite_Cr_Exterieur_0"
+        ],
+        "showInUI": true,
+        "display": "ボディ"
+      },
+      "ドア": {
+        "members": [
+          "Porti��re_avant_gauche_Cr_Exterieur_0",
+          "Porte_avant_droite_Cr_Exterieur_0"
+        ],
+        "showInUI": false,
+        "display": "ドア"
+      },
+      "ホイール": {
+        "members": [
+          "Jante_Jante_1_0",
+          "Jante_3_Jante_0",
+          "Jante_Jante_2_0",
+          "Jante_2_Jante_0",
+          "Pneu_Pneu_0",
+          "Pneu_1_Pneu_0",
+          "Pneu_2_Pneu_0",
+          "Pneu_3_Pneu_0"
+        ],
+        "showInUI": true,
+        "display": "ホイール"
+      },
+      "外装（その他）": {
+        "members": [
+          "Chassis_Chassis_0",
+          "Autres_Barre_0",
+          "Barre_Barre_0"
+        ],
+        "showInUI": false,
+        "display": "ナンバー,外装（その他）"
+      },
+      "燃料タンク": {
+        "members": [
+          "Chassis_2_Chassis_2_0"
+        ],
+        "showInUI": false,
+        "display": "燃料タンク"
+      }
+    },
+    "hiddenNodes": [],
+    "hiddenGroups": []
+  },
+  {
+    "file": "simple_kei_truck.glb",
+    "label": "軽トラック型_1",
+    "showUnaliased": false,
+    "groups": {
+      "ボディ": {
+        "members": [
+          "kei_truck_kei_truck_0"
+        ],
+        "showInUI": true,
+        "display": "ボディ"
+      },
+      "その他（個別ラベル）": {
+        "members": [
+          "kei_truck_kei_truck_glass_0"
+        ],
+        "showInUI": false,
+        "display": "その他"
+      }
+    },
+    "hiddenNodes": [],
+    "hiddenGroups": []
+  }
+
+]

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>3D車体色シミュレーター - 吉野情報技研</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./css/bcs3d.css">
+  <meta name="msapplication-square70x70logo" content="./favicons/site-tile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="./favicons/site-tile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="./favicons/site-tile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="./favicons/site-tile-310x310.png">
+  <meta name="msapplication-TileColor" content="#0078d7">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicons/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="./favicons/android-chrome-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./favicons/android-chrome-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="./favicons/android-chrome-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicons/android-chrome-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="./favicons/android-chrome-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="./favicons/android-chrome-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="./favicons/android-chrome-152x152.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="./favicons/android-chrome-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="./favicons/android-chrome-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./favicons/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="./favicons/icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./favicons/icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="./favicons/icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicons/icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="./favicons/icon-128x128.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="./favicons/icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="152x152" href="./favicons/icon-152x152.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="./favicons/icon-160x160.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicons/icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="./favicons/icon-196x196.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="./favicons/icon-256x256.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="./favicons/icon-384x384.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./favicons/icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/icon-16x16.png">
+  <link rel="icon" type="image/png" sizes="24x24" href="./favicons/icon-24x24.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/icon-32x32.png">
+</head>
+<body>
+  <div id="topBar" role="banner">
+    <img src="./favicons/icon-24x24.png" alt="吉野情報技研" />
+    <h1>
+      <div style="vertical-align: center;">
+
+      <span><a id="brandLink" href="../">吉野情報技研</a></span>
+      - 3D車体色シミュレーター <small>v1.0.0</small>
+      </div>
+    </h1>
+  </div>
+  <div id="app">
+    <div id="canvas-wrap" aria-label="3D ビュー" role="region">
+      <div id="canvasProgress" class="canvasProgress" style="display:none;">
+        <div class="canvasProgressText">モデル読み込み中...</div>
+        <div class="canvasProgressBar">
+          <div class="canvasProgressBarFill" style="width:0%"></div>
+        </div>
+        <div class="canvasProgressPercent">0%</div>
+      </div>
+    </div>
+    <div id="guideText" style="font-weight:normal;font-size:0.8em;text-align:center">(↑車体は、マウスや指で操作すると、回転・拡大・縮小できます)</div>
+    <div id="panelHandle" role="separator" aria-orientation="horizontal" tabindex="0" aria-label="パネルのサイズ調整ハンドル">
+      <div class="bar" aria-hidden="true"></div>
+    </div>
+
+    <aside id="panel" role="region" aria-label="操作パネル">
+      <div id="panelContent">
+
+        <div class="col" style="flex:1;min-width:320px;max-width:100%">
+          <div class="materialGroup">
+            <div class="materialGroupContent">
+              <div class="materialRow">
+                <div class="materialLabelCell">
+                  <h4 class="materialGroupTitle modelSelectTitle">1.車体の選択：</h4>
+                </div>
+                <div class="materialSelectCell">
+                  <select id="modelSelect" aria-label="モデル選択" style="width:100%; min-width:180px">
+                    <option>読み込み待ち…</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="materialGroupContent" style="display:none;">
+              <div class="statusRow">
+                <div class="statusLabel">状態:</div>
+                <div id="opStatus" class="statusValue" aria-live="polite">未読み込み</div>
+                <div class="statusFileName">(<span id="modelFileName" class="modelFilename"></span>)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="materialGroup">
+            <h4 class="materialGroupTitle">2.色の選択</h4>
+            <div class="materialGroupContent">
+              <div id="meshRows" class="meshRows" role="list" aria-label="メッシュグループ一覧"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" style="min-width:260px">
+          <div class="materialGroup">
+            <h4 class="materialGroupTitle">3.質感</h4>
+            <div class="materialGroupContent">
+              <div class="materialRow">
+                <div class="materialLabelCell">
+                  <label class="labelBold" for="metal">金属感</label>
+                </div>
+                <div class="materialDefaultCell">
+                  <span style="font-weight:normal;color:var(--muted);font-size:11px;">(標準:0.85)</span>
+                </div>
+                <div class="materialSliderCell">
+                  <input id="metal" type="range" min="0" max="1" step="0.01" value="0.85" aria-label="メタルネス">
+                </div>
+                <div class="materialValueCell">
+                  <input id="metalVal" type="number" min="0" max="1" step="0.01" value="0.85" aria-label="メタルネス値">
+                </div>
+              </div>
+
+              <div class="materialRow">
+                <div class="materialLabelCell">
+                  <label class="labelBold" for="rough">粗さ</label>
+                </div>
+                <div class="materialDefaultCell">
+                  <span style="font-weight:normal;color:var(--muted);font-size:11px;">(標準:0.12)</span>
+                </div>
+                <div class="materialSliderCell">
+                  <input id="rough" type="range" min="0" max="1" step="0.01" value="0.12" aria-label="ラフネス">
+                </div>
+                <div class="materialValueCell">
+                  <input id="roughVal" type="number" min="0" max="1" step="0.01" value="0.12" aria-label="ラフネス値">
+                </div>
+              </div>
+
+              <div class="materialRow">
+                <div class="materialLabelCell">
+                  <label class="labelBold" for="clearcoat">クリアコート</label>
+                </div>
+                <div class="materialDefaultCell">
+                  <span style="font-weight:normal;color:var(--muted);font-size:11px;">(標準:0.75)</span>
+                </div>
+                <div class="materialSliderCell">
+                  <input id="clearcoat" type="range" min="0" max="1" step="0.01" value="0.75" aria-label="クリアコート">
+                </div>
+                <div class="materialValueCell">
+                  <input id="clearcoatVal" type="number" min="0" max="1" step="0.01" value="0.75" aria-label="クリアコート値">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:6px;justify-content:flex-end;margin-top:8px">
+            <button id="saveLocalBtn" class="btn">保存</button>
+            <button id="loadLocalBtn" class="btn">復元</button>
+            <button id="resetBtn" class="btn">リセット</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script type="module" src="./js/bcs3d.js"></script>
+</body>
+</html>
