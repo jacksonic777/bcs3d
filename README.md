@@ -22,8 +22,8 @@ https://yoshino-tech.com/bcs3d/
 開発者
 
 吉野情報技研
+https://yoshino-tech.com/
 
 今後の予定
 
 * READMEの充実
-* ソースコードの公開
